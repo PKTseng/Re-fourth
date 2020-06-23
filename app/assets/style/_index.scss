@@ -1,0 +1,214 @@
+
+.header{
+  background-image: url(../images/68.png);
+  height: 840px;
+  .container{
+    margin: 0 auto;
+    }
+    .headerTitle{
+      color: #650300;
+      p{
+        
+        font-size: 36px;
+      }
+      h2{
+        font-size: 64px;
+      }
+    }
+}
+
+// 用專業的心，做專業的事
+.content{
+  background-color: #AA06010D;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  h3, h4{
+    text-align: center;
+    color: #650300;
+  }
+  p{
+    text-align: left;
+    font-weight: bold;
+  }
+  img{
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+}
+
+// 經典系列鏡框
+.classic{
+  margin-top: 64px;
+  h3{
+    color: #650300;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .imgH3{
+    font-style: italic;
+    margin-left: 8px;
+    color: #AA0601;
+  }
+}
+
+.design{
+  margin-top: 80px;
+  background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
+  height: 2162px;
+  h3{
+    padding-top: 64px;
+  }
+  .top{
+    justify-content: center;
+
+  }
+
+  // 中間兩大張
+  .imgList{
+    position: relative;
+    height: 592px;
+    width: 585px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .imgList-1{
+    background-image: url(../images/14.png);
+  }
+
+    .imgList-2{
+    background-image: url(../images/39.png);
+  }
+
+  .itemsContent{
+    position: absolute;
+    font-size: 72px;
+    color: #AA0601;
+    z-index: 1;
+  }
+  .bg-white{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    z-index: 1;
+  }
+
+  // 顧客推薦
+  .recommend{
+    margin-top: 144px;
+    h3{
+      margin-bottom: 60px;
+    }
+    .cardList{
+      margin: 0 15px;
+    }
+    .card-body{
+      border: 1px solid gray;
+    }
+  }
+}
+
+// 聯絡我們
+.contact {
+  background-color: #AA06010D;
+  margin-top: 306px;
+  .container {
+    max-width: 792px;
+    margin: 0 auto;
+    padding: 64px 0 92px 0;
+  .sectionTitle {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+  }
+
+  .contactText {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  input[type="text"], textarea {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    border: 1px solid #000;
+    background-color: transparent;
+  }
+
+  textarea {
+    resize: none;
+    height: 136px;
+  }
+
+  ::placeholder, input[type="submit"], lebal {
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  input[type="checkbox"] + label {
+    display: block;
+    cursor: pointer;
+    padding-left: 4px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type=checkbox] + label::before {
+    content: "\2714";
+    border: 1px solid #000;
+    border-radius: 10%;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding: 1px 0 1px 3px;
+    margin-right: 8px;
+    color: transparent;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    background-color: #AA0601;
+    border-color: #AA0601;
+    color: #fff;
+  }
+
+  .submit {
+    margin-top: 42px;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    padding: 16px 58px;
+    cursor: pointer;
+    border: none;
+    background: #AA0601;
+    color: #FFF;
+  }
+
+  @media (max-width:768px) {
+    .container {
+      max-width: 498px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .container {
+      max-width: 327px;
+    }
+
+    }
+  }
+}

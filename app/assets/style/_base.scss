@@ -1,0 +1,47 @@
+*,*::before,*::after{
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h3{
+    font-size: 48px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+}
+
+.font-weight-bold {
+    font-weight: 700 ;
+}
+
+.font-weight-medium{
+    font-weight: 500 ;
+}
+
+ul,ol{
+    list-style:none;
+    padding: 0;
+}
+
+a{
+    color: #000;
+    text-decoration: none !important;
+}
+
