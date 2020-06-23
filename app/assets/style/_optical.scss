@@ -1,0 +1,49 @@
+.optical{
+  h3{
+    font-size: 42px;
+    line-height: 63px;
+  }
+  h4{
+    font-size: 32px;
+  }
+}
+
+
+.glassesContent{
+    margin-top: 88px;
+    .product{
+      margin-top: 48px;
+      margin-bottom: 104px;
+    }
+    .color{
+      width: 24px;
+      height: 24px;
+      background-color: #5F3E2D;
+    }
+    .round{
+      border-radius: 5px;
+    }
+    .color:nth-of-type(2) {
+        background-color: #B75929;
+        margin-left: 8px;
+    }
+    .money{
+      color: #AA0601;
+    }
+
+    .pagination{
+      margin-bottom: 156px;
+    }
+    .active .page-link {
+      z-index: 3;
+      color: #fff;
+      background-color: #000;
+      border-color: #000;
+    }
+
+      .page-link, .active {
+        border-color: #000;
+        color: #000;
+      }
+
+}

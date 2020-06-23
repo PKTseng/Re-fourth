@@ -2,8 +2,23 @@
     background: #AA0601;
 }
 
-.nav-link{
+.logo{
+  margin-left: 88px;
+}
+
+.navItems{
     font-size: 20px;
+}
+
+.navList{
+  padding: 30px 32px;
+  &:hover{
+  transition-duration: 0.5s;
+  background-color: #650300;
+  color: #fff;
+  border-radius: 5px;
+  height: auto;
+  }
 }
 
 .phone, .mail{

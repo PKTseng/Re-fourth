@@ -1,0 +1,29 @@
+.faqContent{
+  margin-top: 88px;
+  margin-bottom: 156px;
+  h4{
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
+
+.questionList{
+  h5{
+    padding: 22px 38px;
+    border:1px solid gray;
+    margin-bottom: 0;
+    &:hover{
+      background-color: #AA0601;
+      color: #fff;
+      }
+  }
+  p{
+    display: none;
+    padding: 22px 246px 22px 38px;
+    background-color: #F2F2F2;
+    border: 1px solid #000;
+    border-top: 0;
+    margin-bottom: 0;
+  }
+
+}

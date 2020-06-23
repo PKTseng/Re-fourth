@@ -1,3 +1,10 @@
-$(document).ready(() => {
-  console.log('Hello Bootstrap4');
+"use strict";
+
+$(document).ready(function () {
+  $('.questionList').click(function () {
+    $(this).toggleClass('active').find('p').slideToggle();
+    $(this).siblings().removeClass('active').find('p').slideUp();
+  });
 });
+
+
