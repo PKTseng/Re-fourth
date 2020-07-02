@@ -40,19 +40,33 @@
 // 經典系列鏡框
 .classic{
   margin-top: 64px;
-  h3{
+  .classicTitle{
     color: #650300;
     text-align: center;
     margin-bottom: 60px;
   }
-
-  .imgH3{
+  .productList{
+    text-transform: uppercase;
     font-style: italic;
-    margin-left: 8px;
     color: #AA0601;
+    
+    .product-icon{
+      margin-right: 0.5rem;
+    }
+  }
+.productImg{
+  width: 66%;
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+  .productSubtitle{
+    margin: 0 8px;
   }
 }
 
+// 聯名設計鏡框
 .design{
   margin-top: 80px;
   background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
@@ -61,8 +75,13 @@
     padding-top: 64px;
   }
   .top{
+    max-width:100%;
     justify-content: center;
-
+    .topRight{
+      img{
+        max-width: 100%;
+      }
+    }
   }
 
   // 中間兩大張
