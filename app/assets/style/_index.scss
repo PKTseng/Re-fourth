@@ -2,17 +2,29 @@
 .header{
   background-image: url(../images/68.png);
   height: 840px;
+  @include pad{
+    background-image: url(../images/rwd/pad/index/68.png);
+  }
   .container{
     margin: 0 auto;
     }
     .headerTitle{
       color: #650300;
       p{
-        
         font-size: 36px;
       }
       h2{
         font-size: 64px;
+      }
+      @include pad{
+        h2{
+          font-size: 48px;
+          padding-right: 48px;
+        }
+        p{
+          font-size: 20px;
+          padding-right: 48px;
+        }
       }
     }
 }
@@ -22,6 +34,9 @@
   background-color: #AA06010D;
   padding-top: 64px;
   padding-bottom: 80px;
+.contentItems{
+  padding: 0 50px;
+}
   h3, h4{
     text-align: center;
     color: #650300;
@@ -29,16 +44,32 @@
   p{
     text-align: left;
     font-weight: bold;
+    @include pad{
+      padding: 0 50px;
+    }
   }
   img{
+    width: 100px;
+    height: 100px;
     margin-top: 60px;
     margin-bottom: 40px;
   }
-
+  @include pad{
+    img{
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 // 經典系列鏡框
 .classic{
+  img{
+    width: 66%;
+    @include pad {
+      width: 60%;
+    }
+  }
   margin-top: 64px;
   .classicTitle{
     color: #650300;
@@ -49,28 +80,38 @@
     text-transform: uppercase;
     font-style: italic;
     color: #AA0601;
-    
-    .product-icon{
-      margin-right: 0.5rem;
+    li{
+      display: flex;
+    }
+    li:nth-child(2n){
+      flex-direction: row-reverse;
+      @include pad{
+        flex-direction: row;
+      }
     }
   }
-.productImg{
-  width: 66%;
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-}
   .productSubtitle{
     margin: 0 8px;
+    display: flex;
+    align-items: center;
+    @include pc{
+      font-size: 28px;
+    }
   }
 }
 
 // 聯名設計鏡框
 .design{
   margin-top: 80px;
-  background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
+  background-image: url(../images/nick.png);
   height: 2162px;
+  width: 100%;
+  @include pc{
+    background-image: url(../images/rwd/pad/index/nick.png);
+  }
+  @include pad{
+    background-image: url(../images/rwd/phone/index/nick.png);
+  }
   h3{
     padding-top: 64px;
   }
@@ -85,30 +126,41 @@
   }
 
   // 中間兩大張
+  .imgMedium{
+    justify-content: center;
+  }
   .imgList{
     position: relative;
-    height: 592px;
-    width: 585px;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    margin-left: 15px;
-    margin-right: 15px;
+    .itemsContent{
+      position: absolute;
+      font-size: 72px;
+      color: #AA0601;
+      z-index: 1;
+    }
+    @include pc{
+      .itemsContent{
+        font-size: 32px;
+      }
+    }
   }
   .imgList-1{
-    background-image: url(../images/14.png);
+    margin-right: 10px;
+    img{
+      max-width: 100%;
+    }
   }
 
     .imgList-2{
-    background-image: url(../images/39.png);
+      margin-left: 10px;
+      img{
+        max-width: 100%;
+      }
   }
 
-  .itemsContent{
-    position: absolute;
-    font-size: 72px;
-    color: #AA0601;
-    z-index: 1;
-  }
+  
   .bg-white{
     position: absolute;
     top: 0;
@@ -121,21 +173,49 @@
 
   // 顧客推薦
   .recommend{
+    .recommendList{
+      display: flex;
+      justify-content: center;
+    }
+    .recommendItems{
+      padding: 0;
+      margin: 0;
+      @include pad{
+        margin-bottom: 40px;
+        // width: 50%;
+      }
+      @include pad{
+        .cardList{ 
+          width: 324px;
+        }
+      }
+    }
     margin-top: 144px;
     h3{
       margin-bottom: 60px;
     }
     .cardList{
       margin: 0 15px;
+      img{
+        width: 100%;
+        
+      }
     }
     .card-body{
       border: 1px solid gray;
+      background-color: #fff;
+      @include pc{
+          margin-bottom: 20px;
+        }
     }
   }
 }
 
 // 聯絡我們
 .contact {
+  @include pad{
+    margin-top: 100px;
+  }
   background-color: #AA06010D;
   margin-top: 306px;
   .container {
@@ -217,17 +297,5 @@
     color: #FFF;
   }
 
-  @media (max-width:768px) {
-    .container {
-      max-width: 498px;
-    }
-  }
-
-  @media (max-width: 375px) {
-    .container {
-      max-width: 327px;
-    }
-
-    }
   }
 }

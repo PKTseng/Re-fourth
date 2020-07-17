@@ -1,3 +1,20 @@
+.topMenu{
+  img{
+    color: #000000;
+  }
+  @include pc{
+    p{
+      font-size: 28px;  
+    }
+  }
+  
+}
+
+// .twoImg-1{
+//   height: 309px;
+// }
+
+
 .optical{
   h3{
     font-size: 42px;

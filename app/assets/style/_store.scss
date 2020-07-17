@@ -2,6 +2,12 @@
 .jumbotronBg{
   background-image: url(../images/72.png);
   min-height: 304px;
+  @include pad{
+    background-image: url(../images/rwd/phone/store/72.png);
+    h1{
+      font-size: 48px;
+    }
+  }
   h1{
     margin-right: 24px;
   }
@@ -15,7 +21,7 @@ label{
 }
 .locationList{
   padding: 10px 20px;
-  width: 10%;
+  width: 266px;
   margin-left: 22px;
 }
 

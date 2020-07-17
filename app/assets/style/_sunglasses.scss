@@ -1,4 +1,33 @@
 //sunglasses 的 SCSS
+.d-sm{
+  display: none;
+}
+.glassesContent{
+  @include pc{
+    max-width: 42rem;
+  }
+}
+
+.sunImg{
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.topMenu{
+  img{
+    width: 48px;
+    height: 48px;
+    @include pc{
+      width: 32px;
+      height: 32px; 
+    }
+  }
+  
+}
+
+
 .sunglassesModel{
   width: 80%;
   font-size: 24px;
@@ -10,9 +39,9 @@
 }
 
 .productItems{
-  max-width: 35%;
   margin-bottom: 104px;
-  img{    
+  img{
     max-width: 100%;
   }
+
 }

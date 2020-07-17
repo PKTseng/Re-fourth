@@ -2,15 +2,43 @@
     background: #AA0601;
 }
 
-.logo{
-  margin-left: 88px;
+.menu{
+  width: 100%;
+  position: relative;
+  .logo{
+    margin-left: 88px;
+    @include pad{
+      margin-left: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .hamburgerMenu{
+    display: none;
+    @include pad{
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
-.navItems{
+
+
+.navListItems{
+  a{
     font-size: 20px;
-}
-
-.navList{
+    @include pad{
+      display: none;
+    }
+    
+  }
   padding: 30px 32px;
   &:hover{
   transition-duration: 0.5s;
@@ -18,13 +46,17 @@
   color: #fff;
   border-radius: 5px;
   height: auto;
+    }
   }
-}
 
 .phone, .mail{
-    width: 40px;
-    height: 40px;
-    margin-right: 23px;
+  height: 36px;
+  width: 36px;
+  margin-right: 20px;
+  @include pc{
+    width: 32px;
+    height: 32px;
+  }
 }
 
 hr{
