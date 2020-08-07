@@ -1,7 +1,5 @@
 //sunglasses 的 SCSS
-.d-sm{
-  display: none;
-}
+
 .glassesContent{
   @include pc{
     max-width: 42rem;
@@ -14,19 +12,6 @@
     height: auto;
   }
 }
-
-.topMenu{
-  img{
-    width: 48px;
-    height: 48px;
-    @include pc{
-      width: 32px;
-      height: 32px; 
-    }
-  }
-  
-}
-
 
 .sunglassesModel{
   width: 80%;
@@ -41,7 +26,8 @@
 .productItems{
   margin-bottom: 104px;
   img{
-    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 
 }

@@ -1,53 +1,69 @@
 .bg-red{
-    background: #AA0601;
-}
-
-.menu{
-  width: 100%;
+  background-color: #AA0601;
   position: relative;
+  }
   .logo{
-    margin-left: 88px;
-    @include pad{
-      margin-left: 0;
+    display: block;
+    padding: 0 0 0 38px;
+    @include phone{
+      padding: 0;
+      display: inline-block;
       position: absolute;
       left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
+      transform: translateX(-50%);
+      top: 10px;
     }
   }
-  .hamburgerMenu{
-    display: none;
-    @include pad{
-      display: block;
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      left: 16px;
-      top: 50%;
-      transform: translateY(-50%);
+.humberMenu{
+  display: none;
+  @include phone{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 16px 13px;
+  }
+}
+
+.navList{
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  li{
+    padding: 40px 32px;
+    &:hover{
+      transition: all 0.5s;
+      background-color: #650300;
+      cursor: pointer;
+    }
+  }
+  a{
+    color: #fff;
+  }
+  @include phone{
+    max-height: 0px;
+    transition: max-height 1.3s;
+    background-color: #AA0601;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    li{
+      text-align: center;
+      border-top: 1px solid #FFF;
+      padding: 16px 0;
+    }
+    a{
+      font-size: 20px;
     }
   }
 }
 
-
-
-.navListItems{
-  a{
-    font-size: 20px;
-    @include pad{
-      display: none;
+.menuShow{
+      max-height: 500px;
     }
-    
-  }
-  padding: 30px 32px;
-  &:hover{
-  transition-duration: 0.5s;
-  background-color: #650300;
-  color: #fff;
-  border-radius: 5px;
-  height: auto;
-    }
-  }
 
 .phone, .mail{
   height: 36px;
@@ -64,3 +80,34 @@ hr{
     height: 1px;
     background-color: #fff; 
 }
+
+@include phone{
+  .footerMenu{
+    display: none;
+  }
+}
+
+.footerInfo{
+  display: flex;
+  align-items: center;
+  .footerLogo{
+    margin-right: 10px;
+  }
+}
+
+@include phone{
+  .footerInfo{
+    small{
+      display: block;
+      }
+      flex-direction: column;
+      align-items: start;
+    }
+    .col-3{
+      flex-direction: column;
+      small{
+        margin-bottom: 5px;
+      }
+    }
+  }
+    

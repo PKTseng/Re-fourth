@@ -2,9 +2,14 @@
 .header{
   background-image: url(../images/68.png);
   height: 840px;
-  @include pad{
+  @include pc{
     background-image: url(../images/rwd/pad/index/68.png);
   }
+  @include phone{
+    background-image: url(../images/rwd/phone/index/68.png);
+    height: 394px;
+  }
+
   .container{
     margin: 0 auto;
     }
@@ -16,14 +21,24 @@
       h2{
         font-size: 64px;
       }
-      @include pad{
+      @include pc{
         h2{
-          font-size: 48px;
-          padding-right: 48px;
+        font-size: 48px;
+        padding-right: 48px;
         }
         p{
           font-size: 20px;
           padding-right: 48px;
+        }
+      }
+      @include phone{
+        h2{
+          font-size: 32px;
+          padding-right: 12px;
+        }
+        p{
+          font-size: 16px;
+          padding-right: 12px;
         }
       }
     }
@@ -35,7 +50,12 @@
   padding-top: 64px;
   padding-bottom: 80px;
 .contentItems{
-  padding: 0 50px;
+  width: 282px;
+  padding: 0 37px;
+  @include pad{
+    width: 352px;
+    margin: 0 auto;
+  }
 }
   h3, h4{
     text-align: center;
@@ -44,8 +64,8 @@
   p{
     text-align: left;
     font-weight: bold;
-    @include pad{
-      padding: 0 50px;
+    @include pc{
+      padding: 0 37px;
     }
   }
   img{
@@ -54,77 +74,128 @@
     margin-top: 60px;
     margin-bottom: 40px;
   }
-  @include pad{
+
+  @include pc{
+    h3{
+      font-size: 32px;
+    }
+    h4{
+      font-size: 20px;
+    }
+    p{
+      font-size: 16px;
+    }
     img{
       width: 80px;
       height: 80px;
+    }
+  }
+  @include phone{
+    h3{
+      font-size: 24px;
     }
   }
 }
 
 // 經典系列鏡框
 .classic{
-  img{
-    width: 66%;
-    @include pad {
-      width: 60%;
-    }
-  }
   margin-top: 64px;
   .classicTitle{
+    font-size: 48px;
+    font-weight: 700;
     color: #650300;
     text-align: center;
     margin-bottom: 60px;
   }
-  .productList{
-    text-transform: uppercase;
-    font-style: italic;
-    color: #AA0601;
-    li{
-      display: flex;
+  .classItems{
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+  }
+  .classicImg{
+    img{
+        max-width: 100%;
+      }
     }
-    li:nth-child(2n){
+  .classIcon{
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    text-transform:uppercase;
+    font-style: italic;
+    font-weight: 700;
+    color: #AA0601;
+    margin: 0 24px;
+    font-size: 48px;
+  }
+  @include pad{
+    li:nth-child(2){
       flex-direction: row-reverse;
-      @include pad{
-        flex-direction: row;
+    }
+    .classItems{
+      display: flex;
+      justify-content: center;
+    }
+    .classicImg{
+      width: 410px;
+    }
+    .classIcon{
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      font-size: 28px;
+      img{
+        height: 32px;
+        width: 32px;
       }
     }
   }
-  .productSubtitle{
-    margin: 0 8px;
-    display: flex;
-    align-items: center;
-    @include pc{
-      font-size: 28px;
+  @include phone{
+    .classItems{
+      position: relative;
+    }
+    .classIcon{
+      position: absolute;
+      left: 25%;
+      z-index: 1;
+      color: #fff;
+      .d-sm{
+        display: block;
+        color: #000;
+      }
     }
   }
 }
 
+
+
 // 聯名設計鏡框
 .design{
   margin-top: 80px;
-  background-image: url(../images/nick.png);
   height: 2162px;
-  width: 100%;
-  @include pc{
-    background-image: url(../images/rwd/pad/index/nick.png);
-  }
-  @include pad{
-    background-image: url(../images/rwd/phone/index/nick.png);
-  }
+  background-image: url(../images/nick.png);
   h3{
     padding-top: 64px;
   }
   .top{
-    max-width:100%;
+    padding: 0 150px;
     justify-content: center;
-    .topRight{
+    .topLeft{
       img{
         max-width: 100%;
+        height: auto;
+        padding: 5px;
+      }
+    }
+    .topRight{
+
+      img{
+        max-width: 100%;
+        height: auto;
+        padding: 5px;
       }
     }
   }
-
   // 中間兩大張
   .imgMedium{
     justify-content: center;
@@ -140,11 +211,6 @@
       color: #AA0601;
       z-index: 1;
     }
-    @include pc{
-      .itemsContent{
-        font-size: 32px;
-      }
-    }
   }
   .imgList-1{
     margin-right: 10px;
@@ -152,15 +218,14 @@
       max-width: 100%;
     }
   }
-
     .imgList-2{
       margin-left: 10px;
       img{
         max-width: 100%;
       }
   }
-
   
+  // 刷白
   .bg-white{
     position: absolute;
     top: 0;
@@ -170,6 +235,31 @@
     background-color: rgba(255, 255, 255, 0.5) !important;
     z-index: 1;
   }
+  @include pc{
+    padding: 0 48px;
+    .imgList{
+      width: 322px;
+    }
+    .imgList{
+      .itemsContent{
+        font-size: 32px;
+      }
+    }
+  }
+@include phone{
+      padding: 0;
+      .imgMedium{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .imgList-1{
+          margin: 0 0 20px 0;
+        }
+        .imgList-2{
+          margin: 0;
+        }
+      }
+    }
 
   // 顧客推薦
   .recommend{
@@ -179,16 +269,6 @@
     }
     .recommendItems{
       padding: 0;
-      margin: 0;
-      @include pad{
-        margin-bottom: 40px;
-        // width: 50%;
-      }
-      @include pad{
-        .cardList{ 
-          width: 324px;
-        }
-      }
     }
     margin-top: 144px;
     h3{
@@ -204,16 +284,23 @@
     .card-body{
       border: 1px solid gray;
       background-color: #fff;
-      @include pc{
-          margin-bottom: 20px;
-        }
+    }
+  }
+  @include pad{
+    .recommend{
+      margin-top: 24px;
+    }
+    .recommendItems{
+      margin-bottom: 24px;
+      max-width: 352px;
     }
   }
 }
 
 // 聯絡我們
-.contact {
-  @include pad{
+.connection {
+  padding: 15px;
+  @include pc{
     margin-top: 100px;
   }
   background-color: #AA06010D;
@@ -297,5 +384,10 @@
     color: #FFF;
   }
 
+  }
+}
+@include phone{
+  .connection{
+    margin-top: 900px;
   }
 }

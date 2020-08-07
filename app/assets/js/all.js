@@ -8,8 +8,10 @@ $(document).ready(function () {
 });
 
 
-// $(document).ready(function () {
-//   $('.showMenu').click(function () {
-//     $(this).toggleClass('.navList').find('.navListItems').slideToggle();
-//   })
-// });
+
+$(document).ready(function () {
+  $('.humberMenu').on('click', function (e) {
+    e.preventDefault();
+    $('.navList').toggleClass('menuShow');
+  });
+});

@@ -1,19 +1,40 @@
+
 .topMenu{
+  a{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
   img{
     color: #000000;
   }
-  @include pc{
+  p{
+    font-size: 42px;
+  }
+  @include pad{
     p{
       font-size: 28px;  
     }
   }
-  
+  @include phone{
+    margin: 0;
+    padding: 0;
+    p{
+      font-size: 14px;
+    }
+    img{
+      width: 11px;
+      height: 11px;
+    }
+}
 }
 
-// .twoImg-1{
-//   height: 309px;
-// }
 
+.twoImg{
+  img{
+    max-width: 100%;
+  }
+}
 
 .optical{
   h3{
@@ -27,40 +48,44 @@
 
 
 .glassesContent{
-    margin-top: 88px;
-    .product{
-      margin-top: 48px;
-      margin-bottom: 104px;
+  margin-top: 88px;
+  .product{
+    margin-top: 48px;
+    margin-bottom: 104px;
+    img{
+      width: 100%;
+      height: auto;
     }
-    .color{
-      width: 24px;
-      height: 24px;
-      background-color: #5F3E2D;
-    }
-    .round{
-      border-radius: 5px;
-    }
-    .color:nth-of-type(2) {
-        background-color: #B75929;
-        margin-left: 8px;
-    }
-    .money{
-      color: #AA0601;
-    }
+  }
+  .color{
+    width: 24px;
+    height: 24px;
+    background-color: #5F3E2D;
+  }
+  .round{
+    border-radius: 5px;
+  }
+  .color:nth-of-type(2) {
+      background-color: #B75929;
+      margin-left: 8px;
+  }
+  .money{
+    color: #AA0601;
+  }
 
-    .pagination{
-      margin-bottom: 156px;
-    }
-    .active .page-link {
-      z-index: 3;
-      color: #fff;
-      background-color: #000;
-      border-color: #000;
-    }
+  .pagination{
+    margin-bottom: 156px;
+  }
+  .active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+  }
 
-      .page-link, .active {
-        border-color: #000;
-        color: #000;
-      }
+  .page-link, .active {
+    border-color: #000;
+    color: #000;
+  }
 
 }
