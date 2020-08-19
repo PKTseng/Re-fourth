@@ -93,6 +93,11 @@ hr{
   .footerLogo{
     margin-right: 10px;
   }
+  .footerText{
+    small{
+      margin: 0 10px 0 0;
+    }
+  }
 }
 
 @include phone{

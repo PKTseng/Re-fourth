@@ -88,4 +88,15 @@
     color: #000;
   }
 
+  @include phone{
+    padding: 60px;
+  }
+
+  @include iPhone7{
+    padding: 20px;
+  }
+
+  @include iPhonePlus{
+    padding: 10px;
+  }
 }

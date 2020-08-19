@@ -16,5 +16,15 @@
   }
 }
 
+@mixin iPhonePlus {
+  @media (max-width: 414px) {
+    @content
+  }
+}
 
+@mixin iPhone7 {
+  @media (max-width: 375px) {
+    @content
+  }
+}
 

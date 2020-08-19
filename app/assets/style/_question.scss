@@ -24,6 +24,8 @@
     border: 1px solid #000;
     border-top: 0;
     margin-bottom: 0;
+    @include pad{
+      padding: 22px;
+    }
   }
-
 }
