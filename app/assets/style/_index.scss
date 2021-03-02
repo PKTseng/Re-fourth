@@ -1,165 +1,165 @@
-
-.header{
+.header {
   background-image: url(../images/68.png);
   height: 840px;
-  @include pc{
+  @include pc {
     background-image: url(../images/rwd/pad/index/68.png);
   }
-  @include phone{
+  @include phone {
     background-image: url(../images/rwd/phone/index/68.png);
     height: 394px;
   }
 
-  .container{
+  .container {
     margin: 0 auto;
+  }
+  .headerTitle {
+    color: #650300;
+    p {
+      font-size: 36px;
     }
-    .headerTitle{
-      color: #650300;
-      p{
-        font-size: 36px;
-      }
-      h2{
-        font-size: 64px;
-      }
-      @include pc{
-        h2{
+    h2 {
+      font-size: 64px;
+    }
+    @include pc {
+      h2 {
         font-size: 48px;
         padding-right: 48px;
-        }
-        p{
-          font-size: 20px;
-          padding-right: 48px;
-        }
       }
-      @include phone{
-        h2{
-          font-size: 32px;
-          padding-right: 12px;
-        }
-        p{
-          font-size: 16px;
-          padding-right: 12px;
-        }
+      p {
+        font-size: 20px;
+        padding-right: 48px;
       }
     }
+    @include phone {
+      h2 {
+        font-size: 32px;
+        padding-right: 12px;
+      }
+      p {
+        font-size: 16px;
+        padding-right: 12px;
+      }
+    }
+  }
 }
 
 // 用專業的心，做專業的事
-.content{
-  background-color: #AA06010D;
+.content {
+  background-color: #aa06010d;
   padding-top: 64px;
   padding-bottom: 80px;
-.contentItems{
-  width: 282px;
-  padding: 0 37px;
-  @include pad{
-    width: 352px;
-    margin: 0 auto;
+  .contentItems {
+    width: 282px;
+    padding: 0 37px;
+    @include pad {
+      width: 352px;
+      margin: 0 auto;
+    }
   }
-}
-  h3, h4{
+  h3,
+  h4 {
     text-align: center;
     color: #650300;
   }
-  p{
+  p {
     text-align: left;
     font-weight: bold;
-    @include pc{
+    @include pc {
       padding: 0 37px;
     }
   }
-  img{
+  img {
     width: 100px;
     height: 100px;
     margin-top: 60px;
     margin-bottom: 40px;
   }
 
-  @include pc{
-    h3{
+  @include pc {
+    h3 {
       font-size: 32px;
     }
-    h4{
+    h4 {
       font-size: 20px;
     }
-    p{
+    p {
       font-size: 16px;
     }
-    img{
+    img {
       width: 80px;
       height: 80px;
     }
   }
-  @include phone{
-    h3{
+  @include phone {
+    h3 {
       font-size: 24px;
     }
   }
 }
 
 // 經典系列鏡框
-.classic{
+.classic {
   margin-top: 64px;
-  .classicTitle{
+  .classicTitle {
     font-size: 48px;
     font-weight: 700;
     color: #650300;
     text-align: center;
     margin-bottom: 60px;
   }
-  .classItems{
+  .classItems {
     margin-bottom: 32px;
     display: flex;
     align-items: center;
   }
-  .classicImg{
-    img{
-        max-width: 100%;
-      }
+  .classicImg {
+    img {
+      max-width: 100%;
     }
-  .classIcon{
+  }
+  .classIcon {
     max-width: 40%;
     display: flex;
     align-items: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-style: italic;
     font-weight: 700;
-    color: #AA0601;
+    color: #aa0601;
     margin: 0 24px;
     font-size: 48px;
   }
-  @include pad{
-    li:nth-child(2){
+  @include pad {
+    li:nth-child(2) {
       flex-direction: row-reverse;
     }
-    .classItems{
+    .classItems {
       display: flex;
       justify-content: center;
     }
-    .classicImg{
+    .classicImg {
       width: 410px;
     }
-    .classIcon{
+    .classIcon {
       display: flex;
       justify-content: center;
       width: 50%;
       font-size: 28px;
-      img{
+      img {
         height: 32px;
         width: 32px;
       }
     }
   }
-  @include phone{
-    .classItems{
+  @include phone {
+    .classItems {
       position: relative;
     }
-    .classIcon{
+    .classIcon {
       position: absolute;
       left: 25%;
       z-index: 1;
       color: #fff;
-      .d-sm{
+      .d-sm {
         display: block;
         color: #000;
       }
@@ -167,29 +167,26 @@
   }
 }
 
-
-
 // 聯名設計鏡框
-.design{
+.design {
   margin-top: 80px;
   height: 2162px;
   background-image: url(../images/nick.png);
-  h3{
+  h3 {
     padding-top: 64px;
   }
-  .top{
+  .top {
     padding: 0 150px;
     justify-content: center;
-    .topLeft{
-      img{
+    .topLeft {
+      img {
         max-width: 100%;
         height: auto;
         padding: 5px;
       }
     }
-    .topRight{
-
-      img{
+    .topRight {
+      img {
         max-width: 100%;
         height: auto;
         padding: 5px;
@@ -197,38 +194,36 @@
     }
   }
   // 中間兩大張
-  .imgMedium{
+  .imgMedium {
     justify-content: center;
   }
-  .imgList{
+  .imgList {
     position: relative;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    .itemsContent{
+    .itemsContent {
       position: absolute;
       font-size: 72px;
-      color: #AA0601;
+      color: #aa0601;
       z-index: 1;
     }
   }
-  .imgList-1{
+  .imgList-1 {
     margin-right: 10px;
-    img{
+    img {
       max-width: 100%;
     }
   }
-    .imgList-2{
-      margin-left: 10px;
-      img{
-        max-width: 100%;
-      }
+  .imgList-2 {
+    margin-left: 10px;
+    img {
+      max-width: 100%;
+    }
   }
 
-
-  
   // 刷白
-  .bg-white{
+  .bg-white {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -237,65 +232,64 @@
     background-color: rgba(255, 255, 255, 0.5) !important;
     z-index: 1;
   }
-  @include pc{
+  @include pc {
     padding: 0 48px;
-    .imgList{
+    .imgList {
       width: 322px;
     }
-    .imgList{
-      .itemsContent{
+    .imgList {
+      .itemsContent {
         font-size: 32px;
       }
     }
   }
-@include phone{
-  .top{
-    padding: 0 15px;
-  }
+  @include phone {
+    .top {
+      padding: 0 15px;
+    }
     padding: 0;
-    .imgMedium{
+    .imgMedium {
       display: flex;
       flex-direction: column;
       align-items: center;
-      .imgList-1{
+      .imgList-1 {
         margin: 0 0 20px 0;
       }
-      .imgList-2{
+      .imgList-2 {
         margin: 0;
       }
     }
   }
 
   // 顧客推薦
-  .recommend{
-    .recommendList{
+  .recommend {
+    .recommendList {
       display: flex;
       justify-content: center;
     }
-    .recommendItems{
+    .recommendItems {
       padding: 0;
     }
     margin-top: 144px;
-    h3{
+    h3 {
       margin-bottom: 60px;
     }
-    .cardList{
+    .cardList {
       margin: 0 15px;
-      img{
+      img {
         width: 100%;
-        
       }
     }
-    .card-body{
+    .card-body {
       border: 1px solid gray;
       background-color: #fff;
     }
   }
-  @include pad{
-    .recommend{
+  @include pad {
+    .recommend {
       margin-top: 24px;
     }
-    .recommendItems{
+    .recommendItems {
       margin-bottom: 24px;
       max-width: 352px;
     }
@@ -305,95 +299,102 @@
 // 聯絡我們
 .connection {
   padding: 15px;
-  @include pc{
+  @include pc {
     margin-top: 100px;
   }
-  background-color: #AA06010D;
-  margin-top: 306px;
+  background-color: #aa06010d;
   .container {
     max-width: 792px;
     margin: 0 auto;
     padding: 64px 0 92px 0;
-  .sectionTitle {
-    margin-bottom: 24px;
-    text-align: center;
-    font-size: 48px;
-    line-height: 72px;
-    font-weight: bold;
-  }
+    .sectionTitle {
+      margin-bottom: 24px;
+      text-align: center;
+      font-size: 48px;
+      line-height: 72px;
+      font-weight: bold;
+    }
 
-  .contactText {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 30px;
-  }
+    .contactText {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 30px;
+    }
 
-  input[type="text"], textarea {
-    width: 100%;
-    margin-top: 4px;
-    margin-bottom: 16px;
-    padding: 14px 16px;
-    border: 1px solid #000;
-    background-color: transparent;
-  }
+    input[type='text'],
+    textarea {
+      width: 100%;
+      margin-top: 4px;
+      margin-bottom: 16px;
+      padding: 14px 16px;
+      border: 1px solid #000;
+      background-color: transparent;
+    }
 
-  textarea {
-    resize: none;
-    height: 136px;
-  }
+    textarea {
+      resize: none;
+      height: 136px;
+    }
 
-  ::placeholder, input[type="submit"], lebal {
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-  }
+    ::placeholder,
+    input[type='submit'],
+    label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+    }
 
-  input[type="checkbox"] + label {
-    display: block;
-    cursor: pointer;
-    padding-left: 4px;
-  }
+    input[type='checkbox'] + label {
+      display: block;
+      cursor: pointer;
+      padding-left: 4px;
+    }
 
-  input[type="checkbox"] {
-    display: none;
-  }
+    input[type='checkbox'] {
+      display: none;
+    }
 
-  input[type=checkbox] + label::before {
-    content: "\2714";
-    border: 1px solid #000;
-    border-radius: 10%;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    padding: 1px 0 1px 3px;
-    margin-right: 8px;
-    color: transparent;
-  }
+    input[type='checkbox'] + label::before {
+      content: '\2714';
+      border: 1px solid #000;
+      border-radius: 10%;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      padding: 1px 0 1px 3px;
+      margin-right: 8px;
+      color: transparent;
+    }
 
-  input[type="checkbox"]:checked + label:before {
-    background-color: #AA0601;
-    border-color: #AA0601;
-    color: #fff;
-  }
+    input[type='checkbox']:checked + label:before {
+      background-color: #aa0601;
+      border-color: #aa0601;
+      color: #fff;
+    }
 
-  .submit {
-    margin-top: 42px;
-    text-align: center;
-  }
+    .submit {
+      margin-top: 42px;
+      text-align: center;
+    }
 
-  input[type="submit"] {
-    padding: 16px 58px;
-    cursor: pointer;
-    border: none;
-    background: #AA0601;
-    color: #FFF;
-  }
-
+    input[type='submit'] {
+      border-radius: 10px;
+      padding: 16px 58px;
+      cursor: pointer;
+      border: none;
+      background: #aa0601;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        background: #471010;
+      }
+    }
   }
 }
 
-@include phone{
-  .connection{
+@include phone {
+  .connection {
     margin-top: 900px;
   }
 }
